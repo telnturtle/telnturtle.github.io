@@ -1,32 +1,299 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Github pages static web serve test</title>
+    <title>엄휘용 포트폴리오</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUITE/fonts/variable/woff2/SUITE-Variable.css" rel="stylesheet">
   </head>
   <body>
-    <div class="a">
-      <h1 class="b">Lorem</h1>
-      <div class="b">Ipsum</div>
-      <div class="b">Foo</div>
-      <div class="b">Bar</div>
+    <section class="first section">
+      <div class="first-c">
+        <h1 class="first-h1">
+          <img class="profile" src="./profile.jpg" alt="Profile picture" loading="lazy" />
+          <span class="span">엄휘용</span>
+        </h1>
+        <div class="first-link with-icon">
+          <img class="icon" src="./svg/email-8-svgrepo-com.svg" />
+          <div>hwiyong.eom@gmail.com</div>
+        </div>
+        <div class="first-link with-icon">
+          <img class="icon" src="./svg/github-svgrepo-com.svg" />
+          <a class="anchor" href="https://github.com/telnturtle" target="_blank">https://github.com/telnturtle</a>
+        </div>
+        <div class="first-link with-icon">
+          <img class="icon" src="./svg/blog-svgrepo-com.svg" />
+          <a class="anchor" href="https://velog.io/@telnturtle" target="_blank">개발자 블로그</a>
+        </div>
+        <div class="first-link with-icon">
+          <img class="icon" src="./svg/gist-svgrepo-com.svg" />
+          <a class="anchor" href="https://gist.github.com/telnturtle" target="_blank">Gist</a>
+        </div>
+      </div>
+    </section>
+    <section class="second section">
+      <div class="second-c">
+        <div class="second-d">
+          <h2 class="second-h2">Yacht Dice</h2>
+          <span class="second-description">2인 플레이 웹게임</span>
+          <ul class="second-ul">
+            <li>CSS 3D 애니메이션</li>
+            <li>redux-toolkit</li>
+            <li>GitHub Pages</li>
+          </ul>
+          <div class="second-link with-icon">
+            <img class="icon" src="./svg/link-svgrepo-com.svg" />
+            <a class="anchor" href="https://telnturtle.github.io/yachtdice/" target="_blank">웹사이트</a>
+          </div>
+          <div class="second-link with-icon">
+            <img class="icon" src="./svg/github-svgrepo-com.svg" />
+            <a class="anchor" href="https://github.com/telnturtle/yachtdice" target="_blank">저장소</a>
+          </div>
+        </div>
+        <img class="screenshot" src="./images/yachtdice_screenshot.png" loading="lazy" />
+        <br />
+      </div>
+    </section>
+    <section class="third section">
+      <div class="third-c">
+        <div class="third-d">
+          <h2 class="third-h2">Dice 3D</h2>
+          <span class="third-description">Yacht Dice에서 쓰이는 주사위를 만들기 위한 프로젝트</span>
+          <ul class="third-ul">
+            <li>Emotion</li>
+            <li>CSS 3D 애니메이션</li>
+            <li>변환행렬 <em>matrix3D()</em></li>
+          </ul>
+          <div class="third-link with-icon">
+            <img class="icon" src="./svg/link-svgrepo-com.svg" />
+            <a class="anchor" href="https://telnturtle.github.io/dice-3d/" target="_blank">웹사이트</a>
+          </div>
+          <div class="third-link with-icon">
+            <img class="icon" src="./svg/github-svgrepo-com.svg" />
+            <a class="anchor" href="https://github.com/telnturtle/dice-3d" target="_blank">저장소</a>
+          </div>
+        </div>
+        <img class="screenshot" src="./images/dice-3d_screenshot.png" loading="lazy" />
+        <br />
+      </div>
+    </section>
+    <footer class="footer section">
+      <div class="footer-link with-icon">
+        <a class="anchor" href="https://telnturtle.github.io">telnturtle.github.io</a>
+      </div>
     </div>
+    </footer>
   </body>
   <style>
+    html,
     body {
+      width: 100%;
+      height: 100%;
       margin: 0;
+      padding: 0;
+      font-size: 100%;
+      box-sizing: border-box;
     }
-    .a {
-      display: flex;
-      width: 100vw;
-      height: 80vh;
-      background-color: rgb(238, 221, 126);
+    body {
+      font-family: 'SUIT Variable', 'Noto Sans KR', sans-serif;
+      overflow-x: hidden;
+      height: 100vh;
+    }
+    h1, h2 {
+      font-family: 'SUITE Variable', 'Noto Sans KR', sans-serif;
+    }
+    body .section:nth-child(2n + 1) {
       background-color: rgb(240, 210, 113);
+    }
+    body .section:nth-child(2n) {
+      background-color: rgb(238, 221, 126);
+      background-color: rgb(246, 230, 137);
+    }
+    .first {
+      width: 100%;
+    }
+    .first-h1 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.4rem;
+    }
+    .first-h1 .profile {
+      border-radius: 50%;
+      width: 5rem;
+      margin-right: 1.25rem;
+      align-self: flex-start;
+    }
+    .first-h1 .span {
+      font-size: 4rem;
+      font-weight: 800;
+    }
+    .first-c {
+      width: 100vw;
+      display: flex;
       flex-flow: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 80vh;
+      padding-left: calc(60vw - 18rem);
+      box-sizing: border-box;
+    }
+    .first-link {
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .first-link .icon {
+      width: 2.5rem;
+      height: 2.25rem;
+      margin-right: 0.5rem;
+    }
+    .first .anchor {
+      color: unset;
+      height: 100%;
+      text-decoration: underline;
+    }
+    .first .with-icon {
+      display: flex;
+      align-items: center;
+    }
+    .second {
+      width: 100%;
+      height: 80vh;
+      display: flex;
       justify-content: center;
       align-items: center;
     }
-    .b {
+    .second-c {
+      box-sizing: border-box;
+      width: 100vw;
+      padding-left: calc(48vw - 24rem);
+      padding-right: calc(52vw - 20rem);
+      display: flex;
+    }
+    .second .screenshot {
+      width: 15rem;
+      margin: 0 0 auto 1rem;
+      max-width: 20rem;
+      height: auto;
+      max-height: 60vh;
+      margin-left: auto;
+    }
+    .second-h2 {
+      font-size: 4rem;
+      margin: 0 0 1rem 0;
+      line-height: 1;
+      font-weight: 700;
+    }
+    .second-description {
+      font-size: 2.5rem;
+      font-weight: 300;
+      word-wrap: break-word;
+      word-break: keep-all;
+    }
+    .second-ul {
+      padding-inline-start: 2rem;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 2.4rem;
+    }
+    .second-link {
+      font-size: 1.5rem;
       margin-bottom: 0.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .second-link .icon {
+      width: 2.5rem;
+      height: 2.25rem;
+      margin-right: 0.5rem;
+    }
+    .second .anchor {
+      color: unset;
+      height: 100%;
+      text-decoration: underline;
+    }
+    .second .with-icon {
+      display: flex;
+      align-items: center;
+    }
+    .third {
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .third-c {
+      box-sizing: border-box;
+      width: 100vw;
+      padding-left: calc(54vw - 24rem);
+      padding-right: calc(46vw - 20rem);
+      display: flex;
+    }
+    .third .screenshot {
+      width: 15rem;
+      margin: 0 0 auto 1rem;
+      max-width: 20rem;
+      height: auto;
+      max-height: 60vh;
+      margin-left: auto;
+    }
+    .third-h2 {
+      font-size: 4rem;
+      margin: 0 0 1rem 0;
+      line-height: 1;
+      font-weight: 700;
+    }
+    .third-description {
+      font-size: 2rem;
+      font-weight: 300;
+      word-wrap: break-word;
+      word-break: keep-all;
+    }
+    .third-ul {
+      padding-inline-start: 2rem;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 2.4rem;
+    }
+    .third-link {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .third-link .icon {
+      width: 2.5rem;
+      height: 2.25rem;
+      margin-right: 0.5rem;
+    }
+    .third .anchor {
+      color: unset;
+      height: 100%;
+      text-decoration: underline;
+    }
+    .third .with-icon {
+      display: flex;
+      align-items: center;
+    }
+    .footer {
+      width: 100vw;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-link {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .footer .anchor {
+      color: unset;
+      height: 100%;
+      text-decoration: underline;
     }
   </style>
 </html>
