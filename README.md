@@ -1,3 +1,4 @@
 # telnturtle.github.io
 
-정적 웹페이지 Github Pages 서빙 테스트
+포트폴리오 웹사이트
+- Github Pages 서빙
