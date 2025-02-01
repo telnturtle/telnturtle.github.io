@@ -1,0 +1,36 @@
+/* .h1 {
+    font-weight: 300;
+} */
+
+#root {
+    max-width: calc(min(960px, 100vw) - 25px);
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#output {
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: var(--font-size-body);
+}
+
+button {
+    position: relative;
+}
+
+h1:is(h1) {
+    font-size: var(--font-size-body);
+    font-variation-settings: "wght" var(--heading-weight);
+}
+
+h2:is(h2) {
+    font-size: var(--font-size-body);
+    margin: 0;
+}
+
+p:is(p) {
+    font-size: var(--font-size-caption);
+    margin: calc(var(--font-size-caption) / 2) 0 0 0;
+}
