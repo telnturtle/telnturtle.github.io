@@ -28,9 +28,12 @@ h1:is(h1) {
 h2:is(h2) {
     font-size: var(--font-size-body);
     margin: 0;
+    font-weight: 900;
 }
 
 p:is(p) {
-    font-size: var(--font-size-caption);
-    margin: calc(var(--font-size-caption) / 2) 0 0 0;
+    font-size: var(--font-size-caption-small);
+    margin: calc(var(--font-size-caption) / 4) 0 0 0;
+    line-height: 1;
+    font-weight: 400;
 }

@@ -58,15 +58,21 @@ const setHeadingWeight = (weight) => {
 }
 
 {
-  let weight = 300
-  let diff = 1
+  let weight = 900
+  let diff = -1
+  let pause = 0
   setInterval(() => {
+    if (pause-- > 0) {
+      return
+    }
     weight += diff
     if (weight >= 1000) {
       diff = -1
+      pause = 250
     } else if (weight <= 100) {
       diff = 1
+      pause = 250
     }
     setHeadingWeight(weight)
-  }, 25)
+  }, 10)
 }
