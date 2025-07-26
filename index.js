@@ -29,6 +29,11 @@ const repositories = [
     description: 'Developer blog',
     url: 'https://medium.com/@telnturtle',
   },
+  {
+    title: 'Minesweeper',
+    description: 'A game',
+    url: '/minesweeper',
+  },
 ]
 
 // shuffle function
@@ -49,6 +54,7 @@ repositories.forEach((repo) => {
       <p>${repo.description}</p>
     </a>
   `
+  div.classList.add('repo-item')
   outputEl.appendChild(div)
 })
 
