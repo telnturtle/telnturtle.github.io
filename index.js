@@ -1,27 +1,27 @@
 const repositories = [
   {
     title: 'Random UUID Version 4 Maker',
-    description: 'A simple UUID version 4 maker',
+    description: 'A simple UUIDv4 maker',
     url: '/uuid4',
   },
   {
     title: 'Sha256 Hash Encoder',
-    description: 'A simple sha256 hash encoder',
+    description: '',
     url: '/sha256-encoder',
   },
   {
     title: 'Yacht Dice Game',
-    description: 'A simple yacht dice game',
+    description: 'A game',
     url: '/yachtdice',
   },
   {
     title: 'Unix Timestamp Calculator',
-    description: 'A simple unix timestamp calculator',
+    description: '',
     url: '/utcalc',
   },
   {
     title: 'Nat Du Si',
-    description: 'A simple hangul nat du si clock',
+    description: 'A simple Hangul Nat Du Si clock',
     url: '/nat-du-si',
   },
   {
