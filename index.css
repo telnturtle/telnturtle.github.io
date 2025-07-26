@@ -29,12 +29,23 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    /* 배경색 천천히 바뀌기 */
+    /* animation: bg-fade-in 0.7s cubic-bezier(1, 0, 0.8, 1) forwards; */
+    animation: bg-fade-in 0.9s linear forwards;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes bg-fade-in {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #242424;
+  }
 }
 
 @media (min-width: 769px) {
