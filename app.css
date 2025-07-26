@@ -13,7 +13,7 @@
     max-width: 100%;
     display: flex;
     flex-flow: column;
-    gap: var(--font-size-body);
+    gap: var(--font-size-heading-small);
 }
 
 button {
@@ -21,23 +21,27 @@ button {
 }
 
 h1:is(h1) {
-    font-size: var(--font-size-body);
+    font-size: var(--font-size-heading);
     font-variation-settings: "wght" var(--heading-weight);
 }
 
 h2:is(h2) {
-    font-size: var(--font-size-body);
+    font-size: var(--font-size-heading-small);
     margin: 0;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 p:is(p) {
-    font-size: var(--font-size-caption-small);
+    font-size: var(--font-size-body);
     margin: calc(var(--font-size-caption) / 4) 0 0 0;
     line-height: 1;
     font-weight: 400;
 }
 
+.title-item {
+    opacity: 0;
+    animation: fade-in-in-place 0.6s ease-out forwards;    
+}
 .repo-item {
     opacity: 0;
     animation: fade-in 0.6s ease-out forwards;
@@ -53,16 +57,24 @@ p:is(p) {
         transform: translateY(0);
     }
 }
+@keyframes fade-in-in-place {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
   
 /* 순서대로 등장 */
-.repo-item:nth-child(1)  { animation-delay: 0.1s; }
-.repo-item:nth-child(2)  { animation-delay: 0.2s; }
-.repo-item:nth-child(3)  { animation-delay: 0.3s; }
-.repo-item:nth-child(4)  { animation-delay: 0.4s; }
-.repo-item:nth-child(5)  { animation-delay: 0.5s; }
-.repo-item:nth-child(6)  { animation-delay: 0.6s; }
-.repo-item:nth-child(7)  { animation-delay: 0.7s; }
-.repo-item:nth-child(8)  { animation-delay: 0.8s; }
-.repo-item:nth-child(9)  { animation-delay: 0.9s; }
-.repo-item:nth-child(10) { animation-delay: 1.0s; }
+.repo-item:nth-child(1)  { animation-delay: calc(0.3s + 0.1s); }
+.repo-item:nth-child(2)  { animation-delay: calc(0.3s + 0.2s); }
+.repo-item:nth-child(3)  { animation-delay: calc(0.3s + 0.3s); }
+.repo-item:nth-child(4)  { animation-delay: calc(0.3s + 0.4s); }
+.repo-item:nth-child(5)  { animation-delay: calc(0.3s + 0.5s); }
+.repo-item:nth-child(6)  { animation-delay: calc(0.3s + 0.6s); }
+.repo-item:nth-child(7)  { animation-delay: calc(0.3s + 0.7s); }
+.repo-item:nth-child(8)  { animation-delay: calc(0.3s + 0.8s); }
+.repo-item:nth-child(9)  { animation-delay: calc(0.3s + 0.9s); }
+.repo-item:nth-child(10) { animation-delay: calc(0.3s + 1.0s); }
   

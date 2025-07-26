@@ -1,16 +1,18 @@
 :root:root {
-    --font-size-heading: 44px;
-    --font-size-body: 32px;
-    --font-size-caption: 20px;
-    --font-size-caption-small: 16px;
+    --font-size-heading: 40px;
+    --font-size-heading-small: 30px;
+    --font-size-body: 20px;
+    --font-size-caption: 15px;
+    --font-size-caption-small: 12px;
 }
 
 @media (min-width: 769px) {
     :root:root {
-        --font-size-heading: 52px;
-        --font-size-body: 40px;
-        --font-size-caption: 28px;
-        --font-size-caption-small: 24px;
+        --font-size-heading: 45px;
+        --font-size-heading-small: 35px;
+        --font-size-body: 25px;
+        --font-size-caption: 20px;
+        --font-size-caption-small: 15px;
     }
 }
 
